@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/login">Login</a>
+  </nav>
+  <form action="/register" method="POST">
+    <h1>Register</h1>
+    <input type="text" name="username" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="text" name="firstName" placeholder="First Name" required>
+    <input type="text" name="lastName" placeholder="Last Name" required>
+    <input type="number" name="age" placeholder="Age" required>
+    <select name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+  <footer>
+    <p>&copy; 2024 Portfolio Platform | Seifullina Dilnaz BDA-2303</p>
+  </footer>
+</body>
+</html>

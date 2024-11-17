@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/portfolio">Portfolio</a>
+    <a href="/login">Logout</a>
+  </nav>
+  <h1>Admin Panel</h1>
+  <form action="/admin/create" method="POST">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="description" placeholder="Description" required></textarea>
+    <input type="text" name="images" placeholder="Image URLs (comma-separated)" required>
+    <button type="submit">Create</button>
+  </form>
+  <div>
+    <div>
+      <h2>Example Admin Item</h2>
+      <p>Description of the item</p>
+      <form action="/admin/update/1" method="POST">
+        <input type="text" name="title" value="Updated Title" required>
+        <textarea name="description">Updated Description</textarea>
+        <input type="text" name="images" value="image1.jpg,image2.jpg" required>
+        <button type="submit">Update</button>
+      </form>
+      <form action="/admin/delete/1" method="POST">
+        <button type="submit">Delete</button>
+      </form>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Portfolio Platform | Seifullina Dilnaz BDA-2303</p>
+  </footer>
+</body>
+</html>
